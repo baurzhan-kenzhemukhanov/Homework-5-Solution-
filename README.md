@@ -1,23 +1,23 @@
 # Homework-5-Solution Proxy and Flyweight Design Patterns
 ## Proxy Pattern – Image Management System
 Problem:
-In a real estate website, agents upload high-resolution property images. Loading these images can slow down the website. The system needs to show low-res thumbnails and only load full-resolution images when required.
+On a real estate website, agents upload high-resolution images of properties, which can slow down the site due to large file sizes. The system needs to display low-resolution thumbnails by default and load the full-resolution images only when necessary.
 
 Solution:
-Using the Proxy Pattern, a proxy object displays low-res thumbnails initially, and loads the high-res images only when requested. Additionally, a protection proxy ensures only logged-in agents can upload or replace images.
+By applying the Proxy Pattern, a proxy object initially displays low-res thumbnails and loads the high-res images only on demand. A protection proxy is also used to ensure that only authenticated agents can upload or replace images.
 
 Benefit:
-The Proxy Pattern improves performance by deferring the loading of heavy images and ensures secure access control for image uploads.
+The Proxy Pattern boosts performance by deferring the loading of large images and enhances security by restricting upload access to authorized users.
 
 
 ## Flyweight Pattern – Map Markers
 Problem:
-Displaying thousands of map markers for locations like restaurants and gas stations results in memory overhead due to duplicated style data (icon, color, etc.).
+Rendering thousands of map markers for locations such as restaurants or gas stations can lead to high memory consumption, as style data (like icons and colors) is duplicated for each marker.
 
 Solution:
-The Flyweight Pattern is used to share marker styles (like icon and color) across multiple markers, reducing memory usage while still allowing each marker to have unique positions.
+The Flyweight Pattern is applied to share common style elements—such as icons and colors—across multiple markers. This minimizes memory usage while still allowing each marker to maintain its unique position.
 
 Benefit:
-The Flyweight Pattern optimizes memory by reusing styles, making the application more efficient, especially with large data sets.
+By reusing shared styles, the Flyweight Pattern significantly reduces memory overhead, improving the application's efficiency when handling large volumes of data.
 
-## In both of these cases, the Proxy Pattern and Flyweight Pattern helped simplify the design, improve performance, and reduce resource consumption. These design patterns are essential tools in optimizing complex systems by managing object creation and access in a more efficient manner.
+## In both scenarios, the Proxy and Flyweight Patterns contributed to a more streamlined design, enhanced performance, and reduced resource usage. These design patterns are valuable techniques for optimizing complex systems, as they allow for more efficient object creation and access management.
